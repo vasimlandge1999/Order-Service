@@ -1,0 +1,17 @@
+
+spring:
+  application:
+    name: Order-Service
+  profiles:
+    #    active: dev
+    #    active: qa
+    active: prod
+  jpa:
+    hibernate:
+      ddl-auto: none
+  flyway:
+    enabled: true
+
+server:
+  port: 8082
+

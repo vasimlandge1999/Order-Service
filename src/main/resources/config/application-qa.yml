@@ -1,0 +1,15 @@
+#spring:
+#  datasource:
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#    username: root
+#    password: root123
+#    url: jdbc:mysql://localhost:3306/order-service?createDatabaseIfNotExist=true
+#
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/order_service
+    username: root
+    password: root123
+    driver-class-name: org.postgresql.Driver
+
