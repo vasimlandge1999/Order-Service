@@ -17,8 +17,9 @@ public class OrderController {
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public OrderResponse addOrder(@RequestBody OrderRequest orderRequest){
-        return orderService.placeOrder(orderRequest);
+    public String addOrder(@RequestBody OrderRequest orderRequest){
+        orderService.placeOrder(orderRequest);
+        return "Order placed successfully";
     }
 
     @GetMapping

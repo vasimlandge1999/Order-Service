@@ -27,6 +27,7 @@ public class OrderServiceImpl implements OrderService {
             order.setSkuCode(orderRequest.skuCode());
             order.setPrice(orderRequest.price());
             order.setQuantity(orderRequest.quantity());
+            orderRepository.saveAndFlush(order);
             return convertFromOrderToOrderResponse(order);
         }
         else{

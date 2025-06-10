@@ -8,9 +8,9 @@ spring:
     active: prod
   jpa:
     hibernate:
-      ddl-auto: none
-  flyway:
-    enabled: true
+      ddl-auto: update
+#  flyway:
+#    enabled: true
 
 server:
   port: 8082
