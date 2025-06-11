@@ -8,7 +8,7 @@
 
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/order-service
+    url: jdbc:postgresql://localhost:5432/order_service?createDatabaseIfNotExist=true
     username: postgres
     password: root123
     driver-class-name: org.postgresql.Driver
